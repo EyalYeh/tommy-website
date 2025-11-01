@@ -16,5 +16,6 @@ A modern portfolio built with **React**, showcasing **Tommy’s** work as a ligh
 ```bash
 cd tommys-website
 npm install
+npm install gsap
 npm run dev
 ```
