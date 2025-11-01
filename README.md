@@ -12,6 +12,9 @@ A modern portfolio built with **React**, showcasing **Tommy’s** work as a ligh
 **React**, **Vite**, **CSS**, **Framer Motion** **GSAP**
 
 ### 🚀 Run Locally
+
+```bash
 cd tommys-website
 npm install
 npm run dev
+```
