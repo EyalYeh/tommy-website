@@ -74,7 +74,7 @@
 }
 
 .resume-btn:hover {
-  font-size: 1.25rem;      /* grows too */
+  font-size: 1.25rem;      /* grows too */ /
 }
 
 /* === Responsive adjustments === */
