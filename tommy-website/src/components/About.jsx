@@ -20,15 +20,18 @@ function About() {
 
   return (
     <section id="about" ref={aboutRef} className="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a passionate designer and developer who loves crafting clean, user-focused digital experiences.
-        My main focus is on building responsive web applications and visually engaging interfaces.
-      </p>
-      <p>
-        I enjoy learning new technologies, experimenting with animations, and turning creative ideas
-        into real products.
-      </p>
+      <div className="about-inner">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate designer and developer who loves crafting clean, user-focused digital experiences.
+          My main focus is on building responsive web applications and visually engaging interfaces.
+        </p>
+        <p>
+          I enjoy learning new technologies, experimenting with animations, and turning creative ideas
+          into real products.
+        </p>
+
+      </div>
     </section>
   );
 }

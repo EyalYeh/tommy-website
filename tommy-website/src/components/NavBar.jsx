@@ -39,12 +39,12 @@ function NavBar() {
   return (
     <nav ref={navRef} className="navbar">
       <div className="navbar-inner">
-        <div className="navbar-logo">Tommy Lights</div>
+        <div className="navbar-logo">Tommy Complex</div>
         <ul className="navbar-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" className="resume-btn">Resume</a></li>
         </ul>
       </div>
     </nav>

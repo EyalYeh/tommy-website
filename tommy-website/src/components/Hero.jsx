@@ -35,11 +35,10 @@ function Hero() {
   return (
     <section id="hero" ref={heroRef} className="hero">
       <div className="hero-content">
-        <h1 className="hero-title">Hi, I’m Tommy</h1>
+        <h1 className="hero-title">Light Artist</h1>
         <p className="hero-subtitle">
           Crafting immersive lighting experiences that transform stages into emotions.
         </p>
-        <button className="hero-button">Hire Me</button>
       </div>
 
       <div className="hero-image-container">

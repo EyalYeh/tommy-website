@@ -7,14 +7,16 @@ function Projects() {
 
   useEffect(() => {
     if (projectsRef.current) {
-      gsap.from(projectsRef.current.children, {
+      gsap.from(projectsRef.current.querySelectorAll(".project-card"), {
         opacity: 0,
         y: 40,
         duration: 1.2,
         stagger: 0.2,
         ease: "power2.out",
         onComplete: () =>
-          gsap.set(projectsRef.current.children, { clearProps: "opacity,transform" }),
+          gsap.set(projectsRef.current.querySelectorAll(".project-card"), {
+            clearProps: "opacity,transform",
+          }),
       });
     }
   }, []);
@@ -44,28 +46,29 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" ref={projectsRef} className="projects">
-      <h2>Projects</h2>
-      <div className="projects-grid">
-        {projects.map((proj, index) => (
-          <a
-            key={index}
-            href={proj.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card"
-          >
-            <img src={proj.image} alt={proj.title} />
-            <div className="project-info">
-              <h3>{proj.title}</h3>
-              <p>{proj.description}</p>
-            </div>
-          </a>
-        ))}
+    <section id="projects" className="projects">
+      <div className="projects-inner" ref={projectsRef}>
+        <h2>Projects</h2>
+        <div className="projects-grid">
+          {projects.map((proj, index) => (
+            <a
+              key={index}
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
+            >
+              <img src={proj.image} alt={proj.title} />
+              <div className="project-info">
+                <h3>{proj.title}</h3>
+                <p>{proj.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
 
 export default Projects;
-
