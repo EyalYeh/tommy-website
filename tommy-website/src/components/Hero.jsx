@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Hero.css";
 import photo1 from "../assets/photo1.jpg";
+import tommy from "../assets/tommy.png";
+import herophoto from "../assets/herophoto.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,16 +35,19 @@ function Hero() {
   }, []);
 
   return (
-    <section id="hero" ref={heroRef} className="hero">
-      <div className="hero-content">
-        <h1 className="hero-title">Light Artist</h1>
-        <p className="hero-subtitle">
-          Crafting immersive lighting experiences that transform stages into emotions.
-        </p>
-      </div>
+    <section id="hero" ref={heroRef} className="hero" >
+      <div className = "hero-inner">
+        <div className="hero-content">
+          <h1 className="hero-title">Light Artist</h1>
+          <p className="hero-subtitle">
+            Crafting immersive lighting experiences that transform stages into emotions.
+          </p>
+        </div>
 
-      <div className="hero-image-container">
-        <img ref={imgRef} src={photo1} alt="Tommy" className="hero-image" />
+        <div className="hero-image-container">
+          <img ref={imgRef} src={tommy} alt="Tommy" className="hero-image" />
+        </div>
+
       </div>
     </section>
   );

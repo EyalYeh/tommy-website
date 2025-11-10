@@ -1,7 +1,6 @@
 html, body {
-  margin: 0;                  /* removes the white gap */
+  margin: 0;                  
   padding: 0;
-  background-color: #0a0a0a;  /* same as your hero */
-  /* ❌ do NOT set height:100% here */
-  /* ❌ do NOT set overflow-y:hidden */
+  background-color: #0a0a0a; 
+
 }

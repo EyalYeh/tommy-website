@@ -1,4 +1,4 @@
-/* Full-width background */
+
 .projects {
   position: relative;
   left: 50%;
@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-/* Inner container matches Hero padding (10vw) */
+
 .projects-inner {
   max-width: 1600px;
   margin: 0 auto;
@@ -71,7 +71,7 @@
   line-height: 1.5;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 768px) {
   .projects-inner {
     padding: 4rem 6vw;
