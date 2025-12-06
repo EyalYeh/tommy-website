@@ -14,11 +14,9 @@
   box-sizing: border-box;
   margin-top: -70px;
   padding-top: 70px;
-  background-image: url('/src/assets/herophoto.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
+
+
 
 .hero-inner {
   width: 100%;

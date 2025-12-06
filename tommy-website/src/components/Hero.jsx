@@ -5,6 +5,8 @@ import "./Hero.css";
 import photo1 from "../assets/photo1.jpg";
 import tommy from "../assets/tommy.png";
 import herophoto from "../assets/herophoto.jpg";
+import videoHero from "../assets/Video_Hero.mp4";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +38,11 @@ function Hero() {
 
   return (
     <section id="hero" ref={heroRef} className="hero" >
+
+      <div className="hero-bg-video" >
+        <video src={videoHero} autoPlay muted loop playsInline/>
+      </div>
+
       <div className = "hero-inner">
         <div className="hero-content">
           <h1 className="hero-title">Light Artist</h1>
