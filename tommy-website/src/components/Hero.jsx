@@ -39,9 +39,9 @@ function Hero() {
   return (
     <section id="hero" ref={heroRef} className="hero" >
 
-      <div className="hero-bg-video" >
-        <video src={videoHero} autoPlay muted loop playsInline/>
-      </div>
+
+      <video className="hero-bg-video" src={videoHero} autoPlay muted loop playsInline/>
+
 
       <div className = "hero-inner">
         <div className="hero-content">
