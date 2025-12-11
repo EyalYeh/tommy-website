@@ -9,37 +9,43 @@
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: #f8fafc;
   overflow: hidden; 
-   background-image: url('/src/assets/_ABOUT ME_.jpg');
+   background-image: url('/src/assets/ABOUT_ME.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Content stays nicely aligned like the hero (10vw gutters) */
+
 .about-inner {
-  max-width: 1600px;      /* optional cap */
+  max-width: 1600px;     
   margin: 0 auto;
   padding: 4rem 10vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-end;
+  text-align: right;
   font-family: 'Poppins', sans-serif;
 }
 
-.about h2 {
+.about-inner h1 {
+  align-self: flex-start; 
+  text-align: left;
+  width: 100%;          
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #ffffff;
-}
+  }
 
-.about p {
+.about-inner p {
+  margin-left: auto;
   max-width: 800px;
   line-height: 1.8;
   font-size: 1.1rem;
   color: #cbd5e1;
   margin-bottom: 1.2rem;
+  text-align: center;
+  transform: translateX( 7vw );
 }
 
 @media (max-width: 768px) {

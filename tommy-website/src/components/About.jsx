@@ -21,16 +21,33 @@ function About() {
   return (
     <section id="about" ref={aboutRef} className="about">
       <div className="about-inner">
-        <h2>About Me</h2>
-        <p>
-          I’m a passionate designer and developer who loves crafting clean, user-focused digital experiences.
-          My main focus is on building responsive web applications and visually engaging interfaces.
-        </p>
-        <p>
-          I enjoy learning new technologies, experimenting with animations, and turning creative ideas
-          into real products.
-        </p>
-
+        <h1>About Me</h1>
+         <div className="about-text-box">
+            <p>
+              I’m Tommy Complex, an artist. I explore the fields of light, music, and visual art. For the past 6 years, my heart beats for the world of lights.
+            </p>
+            <p>
+              I express lighting that doesn’t just look good, but feels alive.
+            </p>
+            <p>
+              I love creating experiences that light people in a clean, immersive, and thoughtfully detailed way.
+            </p>
+            <p>
+              My passion comes from curiosity, the urge to express, to experiment, and to make something meaningful out of an idea.
+            </p>
+            <p>
+              I love being the one who shapes how the story unfolds from shadow into light.
+            </p>
+            <p>
+              Let’s work together to create something that truly stands out.
+            </p>
+            <p>
+              Cool fact
+            </p>
+            <p>
+              I own a professional immersive studio, where I work with musicians, visual artists, and light designers. My setup includes surround Dolby Atmos 7.1.6, 360° projection, and lighting fixtures.
+            </p>
+          </div>
       </div>
     </section>
   );

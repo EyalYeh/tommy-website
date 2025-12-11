@@ -45,15 +45,27 @@ function Hero() {
 
       <div className = "hero-inner">
         <div className="hero-content">
-          <h1 className="hero-title">Light Artist</h1>
+          <h1 className="hero-title">Light Artist and Designer</h1>
           <p className="hero-subtitle">
-            Crafting immersive lighting experiences that transform stages into emotions.
           </p>
         </div>
 
         <div className="hero-image-container">
           <img ref={imgRef} src={tommy} alt="Tommy" className="hero-image" />
         </div>
+
+
+        <div className="hero-right">
+          <p>
+            An artist who loves the expressive aspect, and a designer who loves the technical aspect.
+            My work look simple, but feels alive.
+
+            An artist who loves the expressive aspect, and a designer who loves the technical aspect.
+            My work look simple, but feels alive.
+          </p>
+          <h2>IMMERSING the space, not just lighting it</h2>
+        </div>
+      
 
       </div>
     </section>
