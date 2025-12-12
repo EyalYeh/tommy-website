@@ -7,10 +7,10 @@ import videoProjects from "../assets/Video_Projects.mp4";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { title: "Project One", images: ["/p1-1.jpg", "/p1-2.jpg"] },
-  { title: "Project Two", images: ["/p2-1.jpg"] },
-  { title: "Project Three", images: ["/p3-1.jpg", "/p3-2.jpg"] },
-  { title: "Project Four", images: ["/p4-1.jpg"] },
+  { title: "Fashion", images: ["/p1-1.jpg", "/p1-2.jpg"] },
+  { title: "Theater", images: ["/p2-1.jpg"] },
+  { title: "Live Shows", images: ["/p3-1.jpg", "/p3-2.jpg"] },
+  { title: "Corporate", images: ["/p4-1.jpg"] },
 ];
 
 function Projects() {
