@@ -1,4 +1,4 @@
-.recommend {
+.contact {
   position: relative;
   left: 50%;
   width: 100vw;
@@ -7,24 +7,23 @@
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: #f8fafc;
   overflow: hidden; 
-   background-image: url('/src/assets/Recommendations_Photo.png');
+   background-image: url('/src/assets/Contact.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.recommendations-title{
+.contact-title{
   align-self: flex-start; 
   text-align: left;
   width: 100%;          
   font-size: 5rem;
   font-weight: 700;
-  margin-top: 0.05;
   margin-bottom: 1.5rem;
   color: #ffffff;
 }
 
-.recommendations-inner{
+.contact-inner{
   max-width: 1700px;     
   margin: 0 auto;
   padding: 2rem 6vw;
@@ -32,4 +31,30 @@
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+}
+
+.contact-under-title{
+    align-self: flex-start; 
+    text-align: left;
+    font-size: 1rem;
+
+}
+
+.address-details {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  text-align: center;
+  gap: 2rem;
+}
+
+.address-details h3 {
+  font-weight: 400;
+}
+
+.address-details h3 span {
+  display: block;       
+  line-height: 1.6;
 }
