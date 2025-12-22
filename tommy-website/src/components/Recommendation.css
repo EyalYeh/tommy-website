@@ -33,3 +33,20 @@
   align-items: flex-end;
   text-align: right;
 }
+.recommendation-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.simul-image {
+  width: 750px;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.simul-image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
