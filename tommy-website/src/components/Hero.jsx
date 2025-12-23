@@ -58,11 +58,11 @@ function Hero() {
         <div className="hero-right">
           <p>
             An artist who loves the expressive aspect, and a designer who loves the technical aspect.
-            My work look simple, but feels alive.
-
-            An artist who loves the expressive aspect, and a designer who loves the technical aspect.
-            My work look simple, but feels alive.
           </p>
+          <p>
+            My work looks simple, but feels alive.
+          </p>
+
           <h2>IMMERSING the space, not just lighting it</h2>
         </div>
       

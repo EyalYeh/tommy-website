@@ -42,7 +42,7 @@ function About() {
               Let’s work together to create something that truly stands out.
             </p>
             <p>
-              Cool fact
+              Cool fact:
             </p>
             <p>
               I own a professional immersive studio, where I work with musicians, visual artists, and light designers. My setup includes surround Dolby Atmos 7.1.6, 360° projection, and lighting fixtures.

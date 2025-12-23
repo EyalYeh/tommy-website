@@ -7,10 +7,47 @@ import videoProjects from "../assets/Video_Projects.mp4";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { title: "Fashion", images: ["/p1-1.jpg", "/p1-2.jpg"] },
-  { title: "Theater", images: ["/p2-1.jpg"] },
-  { title: "Live Shows", images: ["/p3-1.jpg", "/p3-2.jpg"] },
-  { title: "Corporate", images: ["/p4-1.jpg"] },
+  { title: "Fashion", images: ["/projects/fashion/1.jpg",
+                               "/projects/fashion/2.jpg", 
+                               "/projects/fashion/3.png",
+                               "/projects/fashion/4.png",
+                               "/projects/fashion/5.png",
+                               "/projects/fashion/6.png",
+                               "/projects/fashion/7.jpg",
+                               "/projects/fashion/8.jpg",
+                               "/projects/fashion/9.jpg",
+                               "/projects/fashion/10.jpg",
+                               "/projects/fashion/11.jpg"] },
+  { title: "Theater", images: ["/projects/theater/1.jpg",
+                               "/projects/theater/2.JPG", 
+                               "/projects/theater/3.jpg",
+                               "/projects/theater/4.jpg",
+                               "/projects/theater/5.jpg",
+                               "/projects/theater/6.jpg",
+                               "/projects/theater/7.jpg",
+                               "/projects/theater/8.jpg",
+                               "/projects/theater/9.jpg",
+                               "/projects/theater/10.jpg"] },
+  { title: "Live Shows", images: ["/projects/live-shows/1.jpg", 
+                                  "/projects/live-shows/2.jpg",
+                                  "/projects/live-shows/3.jpg",
+                                  "/projects/live-shows/4.jpg",
+                                  "/projects/live-shows/5.jpg",
+                                  "/projects/live-shows/6.jpg",
+                                  "/projects/live-shows/7.jpg",
+                                  "/projects/live-shows/8.jpg",
+                                  "/projects/live-shows/9.jpg",
+                                  "/projects/live-shows/10.jpg"] },
+  { title: "Corporate", images: ["/projects/corporate/1.png", 
+                                  "/projects/corporate/2.png",
+                                  "/projects/corporate/3.jpg",
+                                  "/projects/corporate/4.jpg",
+                                  "/projects/corporate/5.jpg",
+                                  "/projects/corporate/6.jpg",
+                                  "/projects/corporate/7.png",
+                                  "/projects/corporate/8.png",
+                                  "/projects/corporate/9.png",
+                                  "/projects/corporate/10.png"] },
 ];
 
 function Projects() {
@@ -77,7 +114,7 @@ function Projects() {
         <div className="project-stage">
           {project.images.length > 1 && (
             <button
-              className="arrow left"
+              className="arrow-left"
               onClick={() =>
                 setActiveImage((i) =>
                   i === 0 ? project.images.length - 1 : i - 1
@@ -96,7 +133,7 @@ function Projects() {
 
           {project.images.length > 1 && (
             <button
-              className="arrow right"
+              className="arrow-right"
               onClick={() =>
                 setActiveImage((i) =>
                   (i + 1) % project.images.length
