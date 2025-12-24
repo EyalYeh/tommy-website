@@ -85,3 +85,69 @@
   transform: translateY(-2px);
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    background-position: center top;
+  }
+
+  .contact-inner {
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 6vw;
+  }
+
+  .contact-title {
+    font-size: 2.8rem;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-under-title {
+    text-align: center;
+    align-self: center;
+    font-size: 1rem;
+    max-width: 520px;
+    line-height: 1.5;
+  }
+
+  .address-details {
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .address-details h3 {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 2vw;
+  }
+
+  .buttons {
+    flex-wrap: wrap;      
+    gap: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .buttons a {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.2rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact-inner {
+    padding: 2.2rem 6vw;
+  }
+
+  .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .buttons a {
+    width: 100%;           
+    max-width: 320px;
+    justify-content: center;
+  }
+}
