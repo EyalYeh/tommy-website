@@ -89,7 +89,7 @@ function Recommendation() {
         <img src={simulSymbol} alt="Simul symbol" className="simul-image" />
       </button>
 
-      <button className="symbol-btn" onClick={() => openPdf(slaughterhousePdf, "Simul")}>
+      <button className="symbol-btn" onClick={() => openPdf(slaughterhousePdf, "Slaughter House")}>
         <img src={slaughterSymbol} alt="Slaughter symbol" className="simul-image" />
       </button>
 
