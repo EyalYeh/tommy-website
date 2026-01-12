@@ -78,29 +78,44 @@
 }
 
 
+:root {
+  --nav-h: 65px;
+}
+
 @media (max-width: 900px) {
+  :root {
+    --nav-h: 88px; 
+  }
+
   .navbar {
-    width: 92%;
-    height: 60px;
+    top: 8px;
+    height: var(--nav-h);
+    width: 94%;
+    padding: 0;                 
   }
 
   .navbar-inner {
+    height: 100%;
+    padding: 0 1rem;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.35rem;             
   }
 
-  .navbar-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.2rem;
+  .navbar-logo {
+    font-size: 1.25rem;         
+    line-height: 1.1;
   }
 
   .navbar-links a {
-    font-size: 0.95rem;
+    font-size: 0.9rem;        
   }
 
-  .resume-btn {
-    padding: 0.35rem 1rem;
-    font-size: 0.95rem;
+  .navbar-links {
+    gap: 0.9rem;
+  }
+
+  .hero {
+    padding-top: calc(var(--nav-h) + 18px);
   }
 }
