@@ -88,7 +88,7 @@
   }
 
   .navbar {
-    top: 8px;
+    top: env(safe-area-inset-top);        
     height: var(--nav-h);
     width: 94%;
     padding: 0;                 
@@ -116,6 +116,6 @@
   }
 
   .hero {
-    padding-top: calc(var(--nav-h) + 18px);
+    padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 10px);
   }
 }
