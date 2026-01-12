@@ -115,7 +115,4 @@
     gap: 0.9rem;
   }
 
-  .hero {
-    padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 10px);
-  }
 }

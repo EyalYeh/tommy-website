@@ -107,13 +107,14 @@
   .hero {
     min-height: 100vh;
     padding: 6rem 6vw 3rem;   
-    justify-content: center;
+    justify-content: flex-start;                
+    padding: calc(6rem + var(--nav-h) + env(safe-area-inset-top) + 10px) 6vw 3rem;
   }
 
   .hero-inner {
     flex-direction: column;   
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 2rem;
     width: 100%;
   }
@@ -145,7 +146,8 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: 5.2rem 6vw 2.5rem;
+    padding: calc(5.2rem + var(--nav-h) + env(safe-area-inset-top) + 10px) 6vw 2.5rem;
+
   }
 
   .hero-title {
