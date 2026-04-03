@@ -52,6 +52,7 @@
 
 .address-details h3 {
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .address-details h3 span {
@@ -62,7 +63,8 @@
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 .buttons a {
