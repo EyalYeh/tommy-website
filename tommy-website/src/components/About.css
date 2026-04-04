@@ -9,7 +9,7 @@
   background: linear-gradient(135deg, #1e293b, #0f172a);
   color: #f8fafc;
   overflow: hidden; 
-   background-image: url('/src/assets/ABOUT_ME_NEW.png');
+   background-image: url('/src/assets/ABOUT_ME_NEW_2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   width: 100%;          
   font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
   color: #ffffff;
   }
 
@@ -40,7 +40,7 @@
   margin-left: auto;
   max-width: 800px;
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #cbd5e1;
   margin-bottom: 1.2rem;
   text-align: center;
