@@ -76,6 +76,10 @@ function Projects() {
   const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  }, []);
+
+  useEffect(() => {
     if (activeProject >= 0) {
       setActiveImage(0);
     }
@@ -84,15 +88,14 @@ function Projects() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    gsap.registerPlugin(ScrollTrigger);
-
     const totalSteps = projects.length + 1;
+    const stepScroll = 60;
 
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: sectionRef.current,
         start: "top top",
-        end: `+=${totalSteps * 60}%`,
+        end: `+=${totalSteps * stepScroll}%`,
         pin: true,
         scrub: true,
         anticipatePin: 1,
@@ -108,12 +111,32 @@ function Projects() {
       });
     }, sectionRef);
 
-    return () => {
-      ctx.revert();
-    };
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    projects.forEach((project) => {
+      project.images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    });
   }, []);
 
   const project = activeProject >= 0 ? projects[activeProject] : null;
+
+  useEffect(() => {
+    if (!project) return;
+
+    const nextIndex = (activeImage + 1) % project.images.length;
+    const prevIndex =
+      activeImage === 0 ? project.images.length - 1 : activeImage - 1;
+
+    [project.images[nextIndex], project.images[prevIndex]].forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [project, activeImage]);
 
   return (
     <section ref={sectionRef} id="projects" className="projects">
@@ -157,6 +180,7 @@ function Projects() {
           )}
 
           <img
+            key={project.images[activeImage]}
             src={project.images[activeImage]}
             alt={project.title}
             className="project-image"
