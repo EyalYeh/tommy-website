@@ -24,7 +24,7 @@ function About() {
         <h1>About Me</h1>
          <div className="about-text-box">
             <p>
-              I’m Tommy Complex, an artist. I explore the fields of light, music, and visual art. For the past 6 years, my heart beats for the world of lights.
+              I’m Tommy Complex, an artist. I explore the fields of light, music, and visual art. For the past 7 years, my heart beats for the world of lights.
             </p>
             <p>
               I express lighting that doesn’t just look good, but feels alive.
