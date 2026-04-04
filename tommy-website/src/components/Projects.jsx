@@ -89,7 +89,7 @@ function Projects() {
     if (!sectionRef.current) return;
 
     const totalSteps = projects.length + 1;
-    const stepScroll = 60;
+    const stepScroll = 40;
 
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
